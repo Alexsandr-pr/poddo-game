@@ -1,0 +1,107 @@
+.left-menu {
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: #272932;
+    width: clamp(10vw, 140px, 100vw)
+}
+
+
+.left-menu__logo {
+    text-align: center;
+    color: #FFF;
+    font-size: 22px;
+    text-transform: uppercase;
+    flex: 0 1 100%;
+}
+
+.left-menu__navbar {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+    height: 100%;
+}
+
+.left-menu__span {
+    background: #8F8F8F;
+    width: 50%;
+    height: 1px;
+}
+.left-menu__list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-menu__item {
+    height: 65px;
+    width: 100%;
+    text-align: center;
+}
+.left-menu__link {
+    width: 100%;
+    display: block;
+
+    padding: 20px 25px;
+    svg {
+        position: relative;
+        z-index: 10;
+    }
+}
+
+
+.indicator {
+    transition: all 0.4s ease 0s;
+    z-index: 3;
+    width: 100%;
+    left: 20%;
+    top: 0;
+    height: 60px;
+    position: absolute;
+    border-radius: 61px;
+    background: #1A1C26;
+}
+
+.menu__indicator-1,
+.menu__indicator-2,
+.menu__indicator-3,
+.menu__indicator-4 {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 20%;
+}
+
+.menu__indicator-1 {
+    top: -40px;
+}
+
+.menu__indicator-2 {
+    top: -40px;
+    border-radius: 0px 0px 50% 0px;
+}
+
+.menu__indicator-3 {
+    bottom: -40px;
+}
+
+.menu__indicator-4 {
+    bottom: -40px;
+    border-radius: 0px 50% 0px 0px;
+}
+.menu__indicator-1,
+.menu__indicator-3 {
+    background: #1A1C26;
+    z-index: 4;
+}
+
+.menu__indicator-4,
+.menu__indicator-2 {
+    z-index: 5;
+    background: #272932;
+}
