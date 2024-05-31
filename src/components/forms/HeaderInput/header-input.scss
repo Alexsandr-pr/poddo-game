@@ -1,0 +1,31 @@
+
+
+
+.header__input {
+    border-radius: 20px;
+    background: #272932;
+    width: 100%;
+    padding: 18px 18px 18px 60px;
+    color: #8F8F8F;
+    font-size: 18px;
+    line-height: 1.55; /* 155.556% */
+    color:#fff ;
+    border: 1px solid transparent;
+    &::placeholder {
+        color: #8F8F8F;
+    }
+    &:focus {
+        outline: none;
+        border: 1px solid #8C67F6;
+    }
+}
+
+.header__label {
+    position: relative;
+    img {
+        left: 28px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}

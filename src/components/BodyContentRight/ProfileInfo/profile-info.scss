@@ -1,0 +1,41 @@
+.profile-info__online {
+    position: relative;
+    font-size: 11px;
+    color:#fff;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    gap: 7px;
+    line-height: 1.45;
+    &::after {
+        content: "";
+        width: 6px;
+        height: 6px;
+        background-color: #E46C5B;
+        display: block;
+        border-radius: 50%;
+    }
+}
+.profile-info__online.active {
+    &::after {
+        background-color: #65EFAD;
+    }
+}
+.profile-bottom {
+    display: grid;
+    gap: 20px;
+    justify-content: space-between;
+    grid-template-columns: 1fr 2fr;
+}
+
+.profile-bottom-right__buttons {
+    display: grid;
+    gap: 28px;
+    grid-template-columns: repeat(2, 1fr);
+}
+.profile-bottom-right {
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

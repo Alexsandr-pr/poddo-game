@@ -1,0 +1,17 @@
+.profile-info-header {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    &:not(:last-child){
+        margin-bottom:25px;
+    }
+}
+
+.profile-info-header__name {
+    text-transform: uppercase;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: capitalize;
+}

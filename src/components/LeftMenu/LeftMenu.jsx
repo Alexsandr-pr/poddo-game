@@ -57,7 +57,6 @@ const LeftMenu = () => {
 
     const refIndicator = useRef()
 
-
     const onChangeActivePosition = () => {
         const element = refIndicator.current;
         element.style.cssText = `
@@ -84,7 +83,7 @@ const LeftMenu = () => {
                         data.map((item, i) => {
                             return (
                                 <li key={i} className="left-menu__item">
-                                    <a onClick={() => setState(i)} href="#" className="left-menu__link">
+                                    <a onClick={() => setState(i)} href="#" className={`left-menu__link ${i === state && "active"}`}>
                                         {item.component}
                                     </a>
                                 </li>
@@ -99,4 +98,4 @@ const LeftMenu = () => {
     )
 }
 
-export default LeftMenu
+export default LeftMenu;

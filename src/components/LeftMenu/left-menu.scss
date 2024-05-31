@@ -4,7 +4,7 @@
     flex-direction: column;
     height: 100vh;
     background: #272932;
-    width: clamp(10vw, 140px, 100vw)
+    width: clamp(10vw, 126px, 100vw);
 }
 
 
@@ -46,14 +46,20 @@
 .left-menu__link {
     width: 100%;
     display: block;
-
     padding: 20px 25px;
     svg {
         position: relative;
         z-index: 10;
     }
+    path {
+        transition: all 0.4s ease 0s;
+    }
 }
-
+.left-menu__link.active {
+    path {
+        fill: #7139CF;
+    }
+}
 
 .indicator {
     transition: all 0.4s ease 0s;
@@ -61,7 +67,7 @@
     width: 100%;
     left: 20%;
     top: 0;
-    height: 60px;
+    height: 66px;
     position: absolute;
     border-radius: 61px;
     background: #1A1C26;

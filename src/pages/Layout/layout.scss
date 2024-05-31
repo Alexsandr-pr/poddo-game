@@ -1,0 +1,30 @@
+.body {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.body__left {
+    width: clamp(10vw, 140px, 100vw);
+}
+.body__right {
+    padding: 40px;
+    width: 90vw;
+}
+
+
+
+
+.body-content {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.body-content__main {
+    flex: 0 1 66.6666%;
+}
+
+.body-content__right {
+    flex: 0 1 33.33333%;
+}
