@@ -6,7 +6,7 @@ import Leaderbord from "../Leaderbord/Leaderbord"
 import LootLeaderBord from "../LootLeaderbord/LootLeaderBord"
 import ProfileInfo from "../ProfileInfo/ProfileInfo"
 import SuggestedForYou from "../SuggestedForYou/SuggestedForYou"
-import LiveChat from "./LiveChat/LiveChat"
+import LiveChat from "../LiveChat/LiveChat"
 import "./body-content-right.scss"
 
 const BodyContentRight = () => {

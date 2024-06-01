@@ -6,9 +6,7 @@ const LiveChat = () => {
     return (
         <ParentBg>
             <div className='live-chat'>
-                <BlockTop title={"LIVE CHAT"}>
-
-                </BlockTop>
+                <BlockTop title={"LIVE CHAT"}></BlockTop>
             </div>
         </ParentBg>
     )
