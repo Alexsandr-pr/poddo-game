@@ -15,38 +15,49 @@ import PetHouseIcon from "components/icons/icon-menu/PetHouseIcon";
 import SettingsIcon from "components/icons/icon-menu/SettingsIcon";
 import LogoutIcon from "components/icons/icon-menu/LogoutIcon";
 import { useEffect, useRef, useState } from "react";
+import { NavLink } from "react-router-dom";
 
 
 const data = [
     {
-        component: <HomeIcon/>
+        component: <HomeIcon/>,
+        to: "home",
     },
     {
-        component: <BagIcon/>
+        component: <BagIcon/>,
+        to: "altersky",
     },
     {
-        component: <GameIcon/>
+        component: <GameIcon/>,
+        to: "",
     },
     {
-        component: <ChartIcon/>
+        component: <ChartIcon/>,
+        to: "chart",
     },
     {
-        component: <ActivityIcon/>
+        component: <ActivityIcon/>,
+        to: "",
     },
     {
-        component: <GmaerRulletteIcon/>
+        component: <GmaerRulletteIcon/>,
+        to: "",
     },
     {
-        component: <ProfileIcon/>
+        component: <ProfileIcon/>,
+        to: "",
     },
     {
-        component: <PetHouseIcon/>
+        component: <PetHouseIcon/>,
+        to: "",
     },
     {
-        component: <SettingsIcon/>
+        component: <SettingsIcon/>,
+        to: "",
     },
     {
-        component: <LogoutIcon/>
+        component: <LogoutIcon/>,
+        to: "",
     },
 ]
 
@@ -83,12 +94,12 @@ const LeftMenu = ({number}) => {
                         <div className="menu__indicator-5"></div>
                     </li>
                     {
-                        data.map((item, i) => {
+                        data.map(({component, to}, i) => {
                             return (
                                 <li key={i} className="left-menu__item">
-                                    <a onClick={() => setState(i)} href="#" className={`left-menu__link ${i === state && "active"}`}>
-                                        {item.component}
-                                    </a>
+                                    <NavLink className={`left-menu__link`} onClick={() => setState(i)} to={to}>
+                                        {component}
+                                    </NavLink>
                                 </li>
                             )
                         })

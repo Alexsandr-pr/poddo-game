@@ -24,10 +24,6 @@
 .input-chat__button {
     width: 32px;
     height: 30px;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 12px;
-    position: absolute;
     display: block;
     rect {
         transition: all 0.3s ease 0s;
@@ -46,4 +42,12 @@
             }
         }
     }
+}
+
+.input-chat__btn-parent {
+    display: block;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
 }

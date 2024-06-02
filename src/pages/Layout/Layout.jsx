@@ -5,7 +5,7 @@ import { Outlet } from 'react-router-dom'
 
 import "./layout.scss"
 import BodyContentRight from 'components/BodyContentRight/BodyContentRight/BodyContentRight'
-import SwipeMenu from 'components/icons/com'
+
 
 const Layout = () => {
 
@@ -13,9 +13,6 @@ const Layout = () => {
     const [menuRight, setMenuRight] = useState(false);
     const touchStartX = useRef(0);
     const touchEndX = useRef(0);
-   // const [swipeDistance, setSwipeDistance] = useState(0);
-
-
     
     const handleTouchStart = (e) => {
         touchStartX.current = e.targetTouches[0].clientX;
@@ -23,11 +20,6 @@ const Layout = () => {
 
     const handleTouchMove = (e) => {
         touchEndX.current = e.targetTouches[0].clientX;
-        // const currentX = e.targetTouches[0].clientX;
-        // const distance = currentX - touchStartX.current;
-        // setSwipeDistance(distance);
-        // console.log(distance)
-
     };
 
     const handleTouchEnd = () => {
@@ -40,9 +32,7 @@ const Layout = () => {
             }
             
         }
-
         if (touchEndX.current - touchStartX.current > 100) {
-            // Свайп вправо
             if(menuRight) {
                 setMenuRight(false);
             } else {

@@ -19,7 +19,6 @@ const Header = () => {
                     <BellIcon/>
                 </button>
                 <button className="header-block__button">
-                    
                     <MessageIcon/>
                 </button>
                 <button className="header-block__button active">

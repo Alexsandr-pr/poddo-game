@@ -11,6 +11,7 @@ import UserItem from 'components/UserItem/UserItem'
 
 import "./live-chat.scss"
 import InputChat from 'components/forms/InputChat/InputChat'
+import InputChatIcon from 'components/icons/InputChatIcon'
 
 const data = [
     {
@@ -52,7 +53,11 @@ const LiveChat = () => {
                 </div>
 
 
-                <InputChat/>
+                <InputChat placeholder={"Send Message"}>
+                    <button className="input-chat__button">
+                        <InputChatIcon/>
+                    </button>
+                </InputChat>
             </div>
         </ParentBg>
     )

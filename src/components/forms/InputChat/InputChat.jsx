@@ -1,15 +1,17 @@
 
-import InputChatIcon from "components/icons/InputChatIcon";
 
 import "./input-chat.scss";
 
-const InputChat = () => {
+const InputChat = ({
+    placeholder,
+    children
+}) => {
     return (
         <label className="input-chat__label">
-            <input placeholder="Send Message" type="text" className="input-chat__input"/>
-            <button className="input-chat__button">
-                <InputChatIcon/>
-            </button>
+            <input placeholder={placeholder} type="text" className="input-chat__input"/>
+            <span className="input-chat__btn-parent">
+                {children}
+            </span>
         </label>
     )
 }
