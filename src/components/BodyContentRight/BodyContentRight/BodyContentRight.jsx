@@ -13,13 +13,13 @@ const BodyContentRight = () => {
     return (
         <div className="body-content-right">
             <ProfileInfo/>
-            <SuggestedForYou/>
-            <ActivityFeed/>
-            <LootLeaderBord/>
-            <GameLeaderBord/>
-            <LiveChat/>
+            
         </div>
     )
 }
-
+/* <SuggestedForYou/>
+            <ActivityFeed/>
+            <LootLeaderBord/>
+            <GameLeaderBord/>
+            <LiveChat/> */
 export default BodyContentRight

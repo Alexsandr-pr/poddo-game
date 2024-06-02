@@ -5,6 +5,9 @@
     gap: 20px;
     align-items: center;
     max-width: fit-content;
+    @media(max-width:1450.98px){
+        flex-direction: row;
+    }
 }
 
 .balance__text {
@@ -16,7 +19,10 @@
 }
 
 .balance__image {
-
     width: 54px;
     height: 54px;
+    @media(max-width:1450.98px){
+        width: 45px;
+        height: 45px;
+    }
 }

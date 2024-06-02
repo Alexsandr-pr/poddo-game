@@ -73,7 +73,6 @@ const LeftMenu = () => {
             <div className="left-menu__logo">
                 <a href="" className="">LOGO</a>
             </div>
-            
             <nav className="left-menu__navbar">
                 <ul className="left-menu__list">
                     <li ref={refIndicator} className="indicator">
@@ -94,12 +93,8 @@ const LeftMenu = () => {
                             )
                         })
                     }
-                    
-                    
                 </ul>
             </nav>
-
-
         </div>
     )
 }

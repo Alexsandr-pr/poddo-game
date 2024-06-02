@@ -4,9 +4,15 @@
     padding: 24px 28px;
     border-radius: 12px;
     background: #272932;
+    @media(max-width:991.98px){
+        padding: 15px;
+    }
 }
 .leaderbord-main-bottom {
     &:not(:last-child){
         margin-bottom:40px;
+        @media(max-width:991.98px){
+            margin-bottom: 20px;
+        }
     }
 }

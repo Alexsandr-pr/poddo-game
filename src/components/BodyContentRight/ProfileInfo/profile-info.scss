@@ -26,12 +26,19 @@
     gap: 20px;
     justify-content: space-between;
     grid-template-columns: 1fr 2fr;
+    @media(max-width:1450.98px){
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .profile-bottom-right__buttons {
     display: grid;
     gap: 28px;
     grid-template-columns: repeat(2, 1fr);
+    @media(max-width:1450.98px){
+        gap: 10px;
+    }
 }
 .profile-bottom-right {
     gap: 12px;

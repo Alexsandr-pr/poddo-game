@@ -1,20 +1,12 @@
 .leaderbord__items {
     display: grid;
     gap: 25px;
-    height: 48vh;
-    padding-right: 6px;
-    overflow-y: auto;
     grid-template-columns: repeat(3,1fr);
-    &::-webkit-scrollbar {
-        width: 6px;
-        border-radius: 30px;
-        background-color: #fff;
-        height: 100%;
+    @media(max-width:1280.98px){
+        grid-template-columns: repeat(2,1fr);
     }
-    &::-webkit-scrollbar-thumb {
-        background: #8C67F6;
-        width: 6px;
-        border-radius: 30px;
+    @media(max-width:487.98px){
+        grid-template-columns: repeat(1,1fr);
     }
 }
 
@@ -22,6 +14,9 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
+    @media(max-width:767.98px){
+        padding-bottom: 40px;
+    }
 }
 
 
@@ -47,6 +42,9 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    @media(max-width:991.98px){
+        padding: 15px 20px;
+    }
 }
 
 .leaderbord-item__text {

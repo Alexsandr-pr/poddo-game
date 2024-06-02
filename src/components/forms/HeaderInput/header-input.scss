@@ -17,6 +17,9 @@
         outline: none;
         border: 1px solid #8C67F6;
     }
+    @media(max-width:767.98px){
+        padding: 12px 12px 12px 50px;
+    }
 }
 
 .header__label {
@@ -26,5 +29,8 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
+        @media(max-width:767.98px){
+            left: 18px;
+        }
     }
 }

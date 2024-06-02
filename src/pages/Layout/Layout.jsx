@@ -44,7 +44,7 @@ const Layout = () => {
             style={{ touchAction: 'none' }}
             
             className='body'>
-            <div className={`body__left ${menuOpen && "active"}`}>
+            <div className={`body__left ${menuOpen ? "active" : null}`}>
                 <LeftMenu />
             </div>
             <div className="body__right">
