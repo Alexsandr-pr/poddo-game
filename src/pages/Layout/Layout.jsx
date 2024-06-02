@@ -33,6 +33,7 @@ const Layout = () => {
             console.log("Свайп вправо")
             setMenuOpen(true);
         }
+        
     };
 
 
@@ -41,8 +42,6 @@ const Layout = () => {
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
             onTouchEnd={handleTouchEnd}
-            style={{ touchAction: 'none' }}
-            
             className='body'>
             <div className={`body__left ${menuOpen ? "active" : null}`}>
                 <LeftMenu />
@@ -61,10 +60,5 @@ const Layout = () => {
         </div>
     )
 }
-/*
-
-
-*/
-
 
 export default Layout
