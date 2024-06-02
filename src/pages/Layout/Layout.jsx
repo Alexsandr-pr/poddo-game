@@ -1,6 +1,6 @@
 import Header from 'components/Header/Header'
 import LeftMenu from 'components/LeftMenu/LeftMenu'
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { Outlet } from 'react-router-dom'
 
 import "./layout.scss"
@@ -10,28 +10,38 @@ import SwipeMenu from 'components/icons/com'
 const Layout = () => {
 
     const [menuOpen, setMenuOpen] = useState(false);
+    const [menuRight, setMenuRight] = useState(false);
     const touchStartX = useRef(0);
     const touchEndX = useRef(0);
+   // const [swipeDistance, setSwipeDistance] = useState(0);
 
+
+    
     const handleTouchStart = (e) => {
         touchStartX.current = e.targetTouches[0].clientX;
     };
 
     const handleTouchMove = (e) => {
         touchEndX.current = e.targetTouches[0].clientX;
+        // const currentX = e.targetTouches[0].clientX;
+        // const distance = currentX - touchStartX.current;
+        // setSwipeDistance(distance);
+        // console.log(distance)
+
     };
 
     const handleTouchEnd = () => {
-        if (touchStartX.current - touchEndX.current > 50) {
-            // Свайп влево
-            console.log("Свайп влево")
+
+        if (touchStartX.current - touchEndX.current > 100) {
             setMenuOpen(false);
+            setMenuRight(true)
         }
 
-        if (touchEndX.current - touchStartX.current > 50) {
+        if (touchEndX.current - touchStartX.current > 100) {
             // Свайп вправо
             console.log("Свайп вправо")
-            setMenuOpen(true);
+            setMenuRight(false)
+            setMenuOpen(true); 
         }
         
     };
@@ -39,20 +49,25 @@ const Layout = () => {
 
     return (
         <div
-            onTouchStart={handleTouchStart}
-            onTouchMove={handleTouchMove}
-            onTouchEnd={handleTouchEnd}
             className='body'>
-            <div className={`body__left ${menuOpen ? "active" : null}`}>
-                <LeftMenu />
+            <div
+                onTouchStart={handleTouchStart}
+                onTouchMove={handleTouchMove}
+                onTouchEnd={handleTouchEnd}
+                className={`body__left ${menuOpen ? "active" : ""}`}>
+                    <LeftMenu />
             </div>
             <div className="body__right">
                 <Header/>
-                <div className="body__content body-content">
+                <div
+                    onTouchStart={handleTouchStart}
+                    onTouchMove={handleTouchMove}
+                    onTouchEnd={handleTouchEnd}
+                    className="body__content body-content">
                     <main className="body-content__main">
                         <Outlet/>
                     </main>
-                    <aside className="body-content__right">
+                    <aside className={`body-content__right ${menuRight ? "active" : ""}`}>
                         <BodyContentRight/>
                     </aside>
                 </div>

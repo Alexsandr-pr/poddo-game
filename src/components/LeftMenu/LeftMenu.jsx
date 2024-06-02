@@ -51,7 +51,7 @@ const data = [
 ]
 
 
-const LeftMenu = () => {
+const LeftMenu = ({number}) => {
     
     const [state, setState] = useState(0);
 
@@ -69,7 +69,7 @@ const LeftMenu = () => {
     }, [state]);
 
     return (
-        <div className={`left-menu`}>
+        <div style={{left: number + "px"}} className={`left-menu`}>
             <div className="left-menu__logo">
                 <a href="" className="">LOGO</a>
             </div>
