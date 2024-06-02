@@ -33,15 +33,21 @@ const Layout = () => {
     const handleTouchEnd = () => {
 
         if (touchStartX.current - touchEndX.current > 100) {
-            setMenuOpen(false);
-            setMenuRight(true)
+            if(menuOpen) {
+                setMenuOpen(false);
+            } else {
+                setMenuRight(true);
+            }
+            
         }
 
         if (touchEndX.current - touchStartX.current > 100) {
             // Свайп вправо
-            console.log("Свайп вправо")
-            setMenuRight(false)
-            setMenuOpen(true); 
+            if(menuRight) {
+                setMenuRight(false);
+            } else {
+                setMenuOpen(true);
+            }
         }
         
     };
