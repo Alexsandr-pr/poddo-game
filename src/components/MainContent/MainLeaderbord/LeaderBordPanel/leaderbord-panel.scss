@@ -1,0 +1,12 @@
+
+
+.leaderbord-main-panel {
+    padding: 24px 28px;
+    border-radius: 12px;
+    background: #272932;
+}
+.leaderbord-main-bottom {
+    &:not(:last-child){
+        margin-bottom:40px;
+    }
+}

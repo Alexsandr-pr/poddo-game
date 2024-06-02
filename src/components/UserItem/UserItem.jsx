@@ -1,9 +1,11 @@
 
 
 import "./user-item.scss"
+import balance from "assets/icon/balance.webp"
 
 
 const UserItem = ({
+    coinsBalance,
     children,
     image,
     name, 
@@ -21,6 +23,13 @@ const UserItem = ({
                 <div className="user-left__body">
                     <div className="user-left__name">{name}</div>
                     <p className="user-left__text">{text}</p>
+                    {
+                        coinsBalance && 
+                        <p className="user-left__coins">
+                            <img width={14} height={14} src={balance} alt="" />
+                            {coinsBalance}
+                        </p>
+                    }
                 </div>
             </div>
             <div className="user-item__right">

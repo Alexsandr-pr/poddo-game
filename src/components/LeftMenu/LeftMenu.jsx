@@ -52,7 +52,7 @@ const data = [
 
 
 const LeftMenu = () => {
-
+    
     const [state, setState] = useState(0);
 
     const refIndicator = useRef()
@@ -60,16 +60,20 @@ const LeftMenu = () => {
     const onChangeActivePosition = () => {
         const element = refIndicator.current;
         element.style.cssText = `
-            top:${65 * state}px;
+            top:${(65 * state) + 20}px;
         `
     }
 
     useEffect(() => {
         onChangeActivePosition()
-    }, [state])
+    }, [state]);
+
     return (
-        <div className="left-menu">
-            <a href="" className="left-menu__logo">LOGO</a>
+        <div className={`left-menu`}>
+            <div className="left-menu__logo">
+                <a href="" className="">LOGO</a>
+            </div>
+            
             <nav className="left-menu__navbar">
                 <ul className="left-menu__list">
                     <li ref={refIndicator} className="indicator">
@@ -94,6 +98,8 @@ const LeftMenu = () => {
                     
                 </ul>
             </nav>
+
+
         </div>
     )
 }

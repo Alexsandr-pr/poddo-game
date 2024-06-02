@@ -11,6 +11,8 @@ import image4 from "./img/04.webp"
 import defaultImage from "./img/defaultImage.webp"
 
 
+
+
 const data = [
     {
         name: "Mr. Jam  moved up on the Fishing Planet leaderboard",
@@ -47,12 +49,12 @@ const ActivityFeed = () => {
         <ParentBg>
             <div className="activity-feed">
                 <BlockTop title={"ACTIVITY FEED"}/>
-                <div className="suggested-for__list">
+                <div className="activity-feed__list">
                     {
                         data.map((item, i) => {
                             return (
                                 <UserItem key={i} {...item}>
-                                    <p>7m ago</p>
+                                    <p className="text">7m ago</p>
                                 </UserItem>
                             )
                         })

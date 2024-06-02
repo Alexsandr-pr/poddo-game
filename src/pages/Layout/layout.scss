@@ -5,8 +5,29 @@
 }
 
 .body__left {
-    width: clamp(10vw, 140px, 100vw);
+    @media(min-width:767.98px){
+        width: clamp(10vw, 140px, 100vw);
+    }
+    transition: all 0.6s ease 0s;
+    @media(max-width:767.98px){
+        position: fixed;
+        left: 0;
+        z-index: 20;
+        opacity: 0;
+        width: 100%;
+        top: 0;
+        background: rgba(29, 30, 38, 0.85);
+        height: 100%;
+    }
 }
+.body__left.active {
+    left: 0;
+    opacity: 1;
+    .left-menu {
+        left: 0;
+    }
+}
+
 .body__right {
     padding: 40px;
     width: 90vw;
@@ -18,7 +39,7 @@
 .body-content {
     display: flex;
     flex-direction: row;
-    
+    gap: 22px;
 }
 
 .body-content__main {

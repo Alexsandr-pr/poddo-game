@@ -38,13 +38,12 @@ const SuggestedForYou = () => {
                     {
                         data.map((item, i) => {
                             return (
-                                <UserItem key={i} {...item}>
+                                <UserItem key={i} {...item} >
                                     <ButtonMain text={"Follow"}/>
                                 </UserItem>
                             )
                         })
                     }
-                    
                 </div>
             </div>
         </ParentBg>

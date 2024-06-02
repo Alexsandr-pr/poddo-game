@@ -1,0 +1,19 @@
+.number-block {
+    width: 25px;
+    height: 25px;
+    background-color: #d9d9d938;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.game-leaderbord__list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
