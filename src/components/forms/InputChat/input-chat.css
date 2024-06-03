@@ -1,0 +1,57 @@
+.input-chat__label {
+  position: relative;
+}
+
+.input-chat__input {
+  width: 100%;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+  padding: 12px 60px 12px 20px;
+  line-height: 2.33; /* 233.333% */
+  border-radius: 10px;
+  background: #1A1C26;
+  border: 1px solid transparent;
+}
+.input-chat__input::-moz-placeholder {
+  color: #8F8F8F;
+}
+.input-chat__input::placeholder {
+  color: #8F8F8F;
+}
+.input-chat__input:focus {
+  outline: none;
+  border: 1px solid #8C67F6;
+}
+
+.input-chat__button {
+  width: 32px;
+  height: 30px;
+  display: block;
+}
+.input-chat__button rect {
+  transition: all 0.3s ease 0s;
+}
+.input-chat__button path {
+  transition: all 0.3s ease 0s;
+}
+@media (hover: hover) {
+  .input-chat__button:hover {
+    cursor: pointer;
+  }
+  .input-chat__button:hover rect {
+    fill: #272932;
+  }
+  .input-chat__button:hover path {
+    fill: #8C67F6;
+  }
+}
+
+.input-chat__btn-parent {
+  display: block;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}/*# sourceMappingURL=input-chat.css.map */

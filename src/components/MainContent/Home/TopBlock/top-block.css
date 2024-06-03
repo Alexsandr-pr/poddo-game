@@ -1,0 +1,98 @@
+.home-top {
+  display: flex;
+  padding: 24px;
+  border-radius: 20px;
+  flex-direction: column;
+  background: linear-gradient(180deg, #753DCF 0.32%, #53348D 80.94%);
+}
+@media (max-width: 487.98px) {
+  .home-top {
+    padding: 12px;
+  }
+}
+
+.home-top__label {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 38px; /* 316.667% */
+  text-transform: capitalize;
+}
+
+.home-top__title {
+  font-family: "Bakbak One";
+  font-size: 35px;
+  line-height: 1.08;
+  text-transform: capitalize;
+}
+.home-top__title:not(:last-child) {
+  margin-bottom: 12px;
+}
+@media (max-width: 767.98px) {
+  .home-top__title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 487.98px) {
+  .home-top__title {
+    font-size: 26px;
+  }
+}
+
+.home-top__text {
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 1.45; /* 145.455% */
+}
+.home-top__text:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.home-top__label {
+  position: relative;
+  height: auto;
+  gap: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-top__input {
+  width: 100%;
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+  height: auto;
+  padding: 12px 20px 12px 20px;
+  line-height: 2.33; /* 233.333% */
+  border-radius: 10px;
+  background: rgba(13, 15, 22, 0.25);
+  border: 1px solid transparent;
+  resize: none;
+}
+.home-top__input::-moz-placeholder {
+  color: #8F8F8F;
+}
+.home-top__input::placeholder {
+  color: #8F8F8F;
+}
+.home-top__input:focus {
+  outline: none;
+  border: 1px solid #8C67F6;
+}
+
+.home-top__buttons {
+  display: flex;
+  justify-content: end;
+  gap: 12px;
+}
+@media (min-width: 767.98px) {
+  .home-top__buttons {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.home-top__buttons .button-input {
+  width: 36.69px;
+  height: 36.69px;
+}/*# sourceMappingURL=top-block.css.map */

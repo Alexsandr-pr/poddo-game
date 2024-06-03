@@ -1,0 +1,22 @@
+.live-chat__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-height: 160px;
+  overflow-y: auto;
+  padding-right: 6px;
+}
+.live-chat__list:not(:last-child) {
+  margin-bottom: 20px;
+}
+.live-chat__list::-webkit-scrollbar {
+  width: 4px;
+  border-radius: 30px;
+  background-color: #fff;
+  height: 100%;
+}
+.live-chat__list::-webkit-scrollbar-thumb {
+  background: #8C67F6;
+  width: 4px;
+  border-radius: 30px;
+}/*# sourceMappingURL=live-chat.css.map */

@@ -1,0 +1,33 @@
+.balance {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+@media (max-width: 1450.98px) {
+  .balance {
+    flex-direction: row;
+  }
+}
+
+.balance__text {
+  color: #FFF;
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 1; /* 152% */
+  text-transform: capitalize;
+}
+
+.balance__image {
+  width: 54px;
+  height: 54px;
+}
+@media (max-width: 1450.98px) {
+  .balance__image {
+    width: 45px;
+    height: 45px;
+  }
+}/*# sourceMappingURL=balance.css.map */

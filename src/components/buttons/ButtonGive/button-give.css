@@ -1,0 +1,12 @@
+.button-give {
+  display: flex;
+  align-items: center;
+  color: #8C67F6;
+  font-size: 12px;
+  font-weight: 600;
+  gap: 10px;
+  padding: 4px 8px;
+  border-radius: 15px;
+  border: 1px solid #8C67F6;
+  line-height: 1.7; /* 20.4px */
+}/*# sourceMappingURL=button-give.css.map */

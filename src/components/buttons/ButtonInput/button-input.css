@@ -1,0 +1,9 @@
+.button-input {
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+  background: rgba(225, 215, 243, 0.1294117647);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=button-input.css.map */

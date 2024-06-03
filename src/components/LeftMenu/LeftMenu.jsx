@@ -21,15 +21,15 @@ import { NavLink } from "react-router-dom";
 const data = [
     {
         component: <HomeIcon/>,
-        to: "home",
+        to: "/",
     },
     {
-        component: <BagIcon/>,
+        component:  <GameIcon/>,
         to: "altersky",
     },
     {
-        component: <GameIcon/>,
-        to: "",
+        component:<BagIcon/>,
+        to: "bunpal",
     },
     {
         component: <ChartIcon/>,
@@ -45,7 +45,7 @@ const data = [
     },
     {
         component: <ProfileIcon/>,
-        to: "",
+        to: "user",
     },
     {
         component: <PetHouseIcon/>,

@@ -1,0 +1,169 @@
+.altersky {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+@media (max-width: 767.98px) {
+  .altersky {
+    padding-bottom: 20px;
+  }
+}
+
+.altersky-top {
+  position: relative;
+  padding: 40px;
+  height: 241px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  border-radius: 24px;
+}
+@media (max-width: 487.98px) {
+  .altersky-top {
+    height: 200px;
+    padding: 20px;
+  }
+}
+
+.altersky-top__image {
+  border-radius: 24px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  opacity: 0.25;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.altersky-top__title {
+  display: flex;
+  align-items: center;
+  font-family: "Bakbak One";
+  font-size: 35px;
+  line-height: 1.08;
+  text-transform: capitalize;
+  gap: 11px;
+}
+.altersky-top__title:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.altersky-top__text {
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 1.45; /* 145.455% */
+}
+
+.altersky-mood {
+  border-radius: 20px;
+  background: #272932;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.altersky-mood__text {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 17px */
+}
+.altersky-mood__text:not(:last-child) {
+  margin-bottom: 23px;
+}
+
+.altersky-mood__buttons {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.altersky-bottom {
+  display: flex;
+  gap: 26px;
+}
+@media (max-width: 667.98px) {
+  .altersky-bottom {
+    flex-direction: column;
+  }
+}
+
+.altersky-bottom__left {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.altersky-bottom__right {
+  border-radius: 20px;
+  background: #272932;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  flex: 0 1 65%;
+}
+
+.altersky-image {
+  position: relative;
+  height: 100%;
+}
+.altersky-image img {
+  opacity: 0.5;
+  width: 100%;
+  border-radius: 20px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.altersky-image__body {
+  position: absolute;
+  bottom: 22px;
+  padding-right: 40px;
+  left: 22px;
+  line-height: 1.7; /* 17px */
+}
+
+.altersky-image__title {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.altersky-image__text {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.altersky-character {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 20px;
+  background: #272932;
+}
+
+.altersky-person__list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.altersky-character__person {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 1 90%;
+  gap: 30px;
+}
+
+.altersky-person__image {
+  margin-top: 25px;
+  flex: 0 1 100%;
+  text-align: center;
+}/*# sourceMappingURL=altersky.css.map */

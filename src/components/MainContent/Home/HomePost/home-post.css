@@ -1,0 +1,144 @@
+.post-big__buttons-top {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.post-big {
+  border-radius: 12px;
+  background: #272932;
+  padding: 25px 31px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+@media (max-width: 991.98px) {
+  .post-big {
+    gap: 20px;
+  }
+}
+@media (max-width: 767.98px) {
+  .post-big {
+    padding: 12px 20px;
+    gap: 15px;
+  }
+}
+
+.post-big-image {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.post-big-image__img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 12px;
+}
+
+.post-big-image__tag {
+  position: absolute;
+  top: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  right: 12px;
+  border-radius: 6px;
+  opacity: 0.65;
+  background: #1B1E28;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.7; /* 18.7px */
+}
+
+.post-big__write {
+  display: flex;
+  width: 100%;
+}
+.post-big__write .user-left__image {
+  width: 54px;
+  height: 54px;
+}
+.post-big__write .user-left__image img {
+  height: 54px;
+  width: 54px;
+}
+.post-big__write .input-chat__label {
+  width: 100%;
+}
+.post-big__write .user-item {
+  gap: 0px;
+}
+
+.items-button-2 {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.post-big-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+@media (min-width: 487.98px) {
+  .post-big-buttons {
+    align-items: center;
+  }
+}
+@media (max-width: 487.98px) {
+  .post-big-buttons {
+    flex-direction: column;
+  }
+}
+
+.post-big-buttons__items {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+@media (max-width: 487.98px) {
+  .post-big-buttons__items {
+    justify-content: space-between;
+  }
+}
+
+.post-big-buttons__view {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #8C67F6;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.7; /* 20.4px */
+}
+@media (max-width: 487.98px) {
+  .post-big-buttons__view {
+    justify-content: end;
+  }
+}
+
+.post-big-liked {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.post-big-liked__text {
+  font-size: 13px;
+  line-height: 1.7; /* 22.1px */
+}
+
+.post-big-liked__users {
+  display: flex;
+}
+
+.post-big-liked__user {
+  display: block;
+}
+.post-big-liked__user:not(:first-child) {
+  margin-left: -6px;
+}/*# sourceMappingURL=home-post.css.map */

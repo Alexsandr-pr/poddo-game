@@ -1,0 +1,98 @@
+
+
+
+.bunpal-item {
+    background: #272932;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.7;
+    border-radius: 20px;
+}
+
+.bunpal-item__name {
+    font-size: 13px;
+    font-weight: 600;
+}
+.bunpal-item__level {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 9px;
+    &:not(:last-child){
+    margin-bottom:9px;
+    }
+}
+
+
+.bunpal-items {
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    @media(max-width:991.98px){
+        gap: 15px;
+    }
+    @media(max-width:667.98px){
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media(max-width:487.98px){
+        gap: 10px;
+    }
+    @media(max-width:377.98px){
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.bunpal-image__image {
+    img {
+        width: 100%;
+        border-radius: 20px 20px 0px 0px;
+        height: auto;
+    }
+}
+
+.bunpal-image {
+    position: relative;
+}
+.image-person-bunpal {
+    position: relative;
+    width: 53px;
+    height: 53px;
+    border-radius: 61px;
+    margin-left: 13px;
+    margin-top: -26px;
+    border: 4px solid #272932;
+    .image-person-bunpal__image img {
+        border-radius: 61px;
+    }
+}
+
+.image-person-bunpal__pet {
+    position: absolute;
+    right: -5px;
+    bottom: -5px;
+}
+.bunpal-item__body {
+    padding: 13px;
+    @media(max-width:487.98px){
+        padding: 10px;
+    }
+}
+
+.bunpal-item__text {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 8px;
+    margin-bottom: 10px;
+}
+
+.bunpal-review {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.bunpal-review__text {
+    font-size: 12px;
+    font-weight: 500;
+    @media(max-width:487.98px){
+        font-size: 10px;
+    }
+}

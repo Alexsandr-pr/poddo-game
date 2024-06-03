@@ -1,0 +1,12 @@
+.button-filter {
+  padding: 10px 23px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.7; /* 22.1px */
+  background: #272932;
+}
+
+.button-filter.active {
+  background: linear-gradient(180deg, #7940CF 0%, #5921CB 100%);
+}/*# sourceMappingURL=button-filter.css.map */

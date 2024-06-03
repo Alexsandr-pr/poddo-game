@@ -1,0 +1,18 @@
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.rating__number {
+    color: #E4D96D;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.7; /* 20.4px */
+}
+.rating__quantity {
+    color: #D7D7D7;
+    font-size: 9px;
+    font-weight: 500;
+    line-height: 1.7; /* 15.3px */
+}

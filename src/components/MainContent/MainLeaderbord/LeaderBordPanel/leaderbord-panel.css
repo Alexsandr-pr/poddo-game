@@ -1,0 +1,19 @@
+.leaderbord-main-panel {
+  padding: 24px 28px;
+  border-radius: 12px;
+  background: #272932;
+}
+@media (max-width: 991.98px) {
+  .leaderbord-main-panel {
+    padding: 15px;
+  }
+}
+
+.leaderbord-main-bottom:not(:last-child) {
+  margin-bottom: 40px;
+}
+@media (max-width: 991.98px) {
+  .leaderbord-main-bottom:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}/*# sourceMappingURL=leaderbord-panel.css.map */

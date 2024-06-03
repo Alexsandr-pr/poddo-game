@@ -12,6 +12,7 @@ a {
     text-decoration: none;
     color: inherit;
     -webkit-tap-highlight-color:  transparent;
+    touch-action: 'none' !important;
 }
 ul,
 ol,
@@ -28,31 +29,34 @@ h4,
 h5,
 h6 {
     font-weight: inherit;
-    font-size: inherit; 
+    font-size: inherit;
 }
 html,
 body {
     color: #FFF;
     overflow: hidden;
     height: 100%;
-    line-height: 1;
+    line-height: 1.7;
     font-family:Montserrat;
     background: #1A1C26;
     font-weight: 400;
 }
 @media(max-width:767.98px){
     body {
-        overflow: auto;
+        overflow-y: auto;
+        overflow-x: hidden;
     }
 }
 button,
 input {
+    touch-action: 'none' !important;
     font-weight: inherit;
     font-size: inherit;
     color: inherit;
     font-family: inherit;
 }
 button {
+    touch-action: 'none' !important;
     cursor: pointer;
     background-color: inherit;
 }

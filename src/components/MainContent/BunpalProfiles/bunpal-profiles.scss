@@ -1,0 +1,22 @@
+.bunpal-button__items {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 23px;
+    width: 100%;
+    row-gap: 6px;
+}
+
+
+.bunpal {
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+    @media(max-width:991.98px){
+        gap: 30px;
+    }
+    @media(max-width:767.98px){
+        gap: 20px;
+        padding-bottom: 40px;
+    }
+}
+

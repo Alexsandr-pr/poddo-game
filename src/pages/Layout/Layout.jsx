@@ -1,7 +1,7 @@
 import Header from 'components/Header/Header'
 import LeftMenu from 'components/LeftMenu/LeftMenu'
 import React, { useEffect, useRef, useState } from 'react'
-import { Outlet } from 'react-router-dom'
+import { Outlet, useLocation } from 'react-router-dom'
 
 import "./layout.scss"
 import BodyContentRight from 'components/BodyContentRight/BodyContentRight/BodyContentRight'
@@ -9,6 +9,7 @@ import BodyContentRight from 'components/BodyContentRight/BodyContentRight/BodyC
 
 const Layout = () => {
 
+    const location = useLocation()
     const [menuOpen, setMenuOpen] = useState(false);
     const [menuRight, setMenuRight] = useState(false);
     const touchStartX = useRef(0);
@@ -42,6 +43,9 @@ const Layout = () => {
         
     };
 
+    useEffect(() => {
+        setMenuOpen(false);
+    }, [location])
 
     return (
         <div
