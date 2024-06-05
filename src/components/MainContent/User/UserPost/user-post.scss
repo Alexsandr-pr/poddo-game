@@ -1,0 +1,8 @@
+.user-post {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    @media(max-width:767.98px){
+        gap: 15px;
+    }
+}

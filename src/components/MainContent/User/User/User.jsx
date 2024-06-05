@@ -7,6 +7,7 @@ import user from "assets/user-big.png";
 import pet from "assets/pet.png"
 import useMediaQuery from 'hooks/useMediaQuery';
 import ButtonWhite from 'components/buttons/ButtonWhite/ButtonWhite';
+import UserBottom from '../UserBottom/UserBottom';
 const User = () => {
 
     const query = useMediaQuery('(max-width:767.98px)');
@@ -70,7 +71,7 @@ const User = () => {
             </div>
 
             <div className="user__bottom">
-
+                <UserBottom/>
             </div>
         </div>
     )

@@ -17,6 +17,7 @@ import ButtonGive from 'components/buttons/ButtonGive/ButtonGive';
 import user1 from "./img/users/02.webp"
 import user2 from "./img/users/02.webp"
 import user3 from "./img/users/03.webp"
+import PostImage from 'components/PostImage/PostImage';
 
 const HomePost = () => {
     return (
@@ -29,13 +30,8 @@ const HomePost = () => {
                     </div>
                 </UserItem>
             </div>
-            <div className="post-big__image post-big-image">
-                <div className="post-big-image__tag">
-                    <img src={minecraft} alt="" />
-                    <p>Minecraft</p>
-                </div>
-                <img src={imageMain} alt="" className="post-big-image__img" />
-            </div>
+            
+            <PostImage name={"Minecraft"} imageGameLogo={minecraft} imageBig={imageMain}/>
 
             <div className="post-big__buttons post-big-buttons">
                 <div className="post-big-buttons__items">

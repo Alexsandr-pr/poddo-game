@@ -160,3 +160,15 @@
     flex: 0 1 100%;
     text-align: center;
 }
+
+
+.image-path {
+    path {
+        opacity: 0;
+    }
+    &.active {
+        path {
+            opacity: 1;
+        }
+    }
+}
