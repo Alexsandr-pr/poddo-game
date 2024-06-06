@@ -4,7 +4,7 @@ import image from "./img/image.svg"
 import PostImage from "components/PostImage/PostImage";
 import UserItem from "components/UserItem/UserItem";
 
-import user from "assets/user.webp"
+import user from "assets/user.png"
 import ButtonPoints from "components/buttons/ButtonPoints/ButtonPoints";
 
 const UserPost = () => {

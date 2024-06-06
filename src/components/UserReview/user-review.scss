@@ -1,0 +1,35 @@
+.user-review {
+    display: flex;
+    gap: 37px;
+    @media(max-width:487.98px){
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+.user-review__content {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 10px;
+}
+
+.user-review-body__content {
+    display: flex;
+    flex-direction: column;
+}
+.user-review-body__name {
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.user-review-body {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.user-review-body__image {
+    img {
+        border-radius: 12px;
+    }
+}

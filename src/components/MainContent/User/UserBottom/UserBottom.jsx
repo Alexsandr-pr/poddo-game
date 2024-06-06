@@ -1,15 +1,18 @@
 import ButtonViolet from "components/buttons/ButtonViolet/ButtonViolet"
 
+import { useAutoAnimate } from "@formkit/auto-animate/react"
+
 import "./user-bottom.scss"
 import { useState } from "react"
 import UserPost from "../UserPost/UserPost";
+import UserGig from "../UserGigs/UserGig";
 
 
 
 const UserBottom = () => {
 
     const [state, setState] = useState("post");
-
+    const [block] = useAutoAnimate()
     return (
         <div className="user-bottom">
             <div className="user-bottom__head user-bottom-head">
@@ -34,8 +37,19 @@ const UserBottom = () => {
             
             </div>
 
-            <div className="">
-                {state === "post" && <UserPost/>}
+            <div ref={block} className="user-bottom__list">
+                {state === "post" && 
+                    <>
+                        <UserPost/>
+                        <UserPost/>
+                    </>
+                }
+                {state === "gig" && 
+                    <>
+                        <UserGig/>
+                        <UserGig/>
+                    </>
+                }
             </div>
         </div>
     )

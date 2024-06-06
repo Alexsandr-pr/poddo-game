@@ -12,6 +12,7 @@ const Layout = () => {
     const location = useLocation()
     const [menuOpen, setMenuOpen] = useState(false);
     const [menuRight, setMenuRight] = useState(false);
+    /*
     const touchStartX = useRef(0);
     const touchEndX = useRef(0);
     
@@ -42,6 +43,7 @@ const Layout = () => {
         }
         
     };
+    */
 
     useEffect(() => {
         setMenuOpen(false);
@@ -51,18 +53,12 @@ const Layout = () => {
         <div
             className='body'>
             <div
-                onTouchStart={handleTouchStart}
-                onTouchMove={handleTouchMove}
-                onTouchEnd={handleTouchEnd}
                 className={`body__left ${menuOpen ? "active" : ""}`}>
                     <LeftMenu />
             </div>
             <div className="body__right">
                 <Header/>
                 <div
-                    onTouchStart={handleTouchStart}
-                    onTouchMove={handleTouchMove}
-                    onTouchEnd={handleTouchEnd}
                     className="body__content body-content">
                     <main className="body-content__main">
                         <Outlet/>

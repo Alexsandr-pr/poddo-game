@@ -1,5 +1,6 @@
 
 
+import GameName from "components/GameName/GameName";
 import "./post-image.scss";
 
 const PostImage = ({name, imageBig, imageGameLogo}) => {
@@ -7,8 +8,7 @@ const PostImage = ({name, imageBig, imageGameLogo}) => {
         
             <div className="post-big__image post-big-image">
                 <div className="post-big-image__tag">
-                    <img src={imageGameLogo} alt="" />
-                    <p>{name}</p>
+                    <GameName text={name} image={imageGameLogo}/>
                 </div>
                 <img src={imageBig} alt="" className="post-big-image__img" />
             </div>
