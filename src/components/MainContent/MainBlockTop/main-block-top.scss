@@ -3,4 +3,9 @@
     align-items: center;
     gap: 10px;
     justify-content: space-between;
+    @media(max-width:487.98px){
+        flex-direction: column;
+        width: 100%;
+        align-items: inherit;
+    }
 }

@@ -140,29 +140,7 @@
 }
 
 
-.quest-range-2 {
-    position: relative;
-    border-radius: 20px;
-    z-index: 2;
-    min-width: 100%;
-    height: 18px;
-    background: #493A65;
-    
-}
-.quest-range__indicator-2 {
-    text-align: right;
-    position: absolute;
-    top: 0px;
-    left: 0;
-    height: 18px;
-    width: 70%;
-    border-radius: 20px;
-    background: linear-gradient(90deg, #773FCF 0%, #5B23CB 100%);
-    
-    padding-right: 17px;
-    font-size: 11px;
-    line-height: 1.7; /* 18.7px */
-}
+
 
 .user-stats {
     align-items: center;

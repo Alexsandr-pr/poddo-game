@@ -5,6 +5,7 @@ import { Outlet, useLocation } from 'react-router-dom'
 
 import "./layout.scss"
 import BodyContentRight from 'components/BodyContentRight/BodyContentRight/BodyContentRight'
+import MenuMobile from 'components/MenuMobile/MenuMobile'
 
 
 const Layout = () => {
@@ -68,6 +69,7 @@ const Layout = () => {
                     </aside>
                 </div>
             </div>
+            <MenuMobile/>
         </div>
     )
 }

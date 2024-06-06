@@ -8,6 +8,9 @@ import pet from "assets/pet.png"
 import useMediaQuery from 'hooks/useMediaQuery';
 import ButtonWhite from 'components/buttons/ButtonWhite/ButtonWhite';
 import UserBottom from '../UserBottom/UserBottom';
+
+import Range from 'components/Quest/Range';
+
 const User = () => {
 
     const query = useMediaQuery('(max-width:767.98px)');
@@ -59,9 +62,7 @@ const User = () => {
             <div className="user__stats user-stats">
                 <p className='user-stats__level'>Level 2</p>
                 <div className="user-stats__body">
-                    <div className="quest-range-2">
-                        <div className="quest-range__indicator-2">80%</div>  
-                    </div>
+                    <Range/>
                 </div>
                 <div className="user-stats__btn">
                     <ButtonWhite>

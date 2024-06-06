@@ -49,7 +49,7 @@ const data = [
     },
     {
         component: <PetHouseIcon/>,
-        to: "",
+        to: "pet",
     },
     {
         component: <SettingsIcon/>,

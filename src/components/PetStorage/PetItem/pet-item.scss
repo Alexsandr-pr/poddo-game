@@ -1,0 +1,55 @@
+
+
+.pet-item {
+    display: flex;
+    flex-direction: column;
+    padding: 17px;
+    gap: 12px;
+    border-radius: 16px;
+    background: #272932;
+    @media(max-width:487.98px){
+        padding: 12px;
+        gap: 8px;
+    }
+}
+
+
+
+.pet-item__name {
+    font-size: 13px;
+    font-weight: 600;
+}
+.pet-item__nick {
+    font-size: 8px;
+}
+
+.pet-item__list {
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pet-list-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.pet-list-item__text {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 7px;
+}
+
+.pet-list-item__label {
+    font-size: 8px;
+}
+
+.pet-item__block {
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+}
+
+.pet-item__block-title {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 7px;
+}

@@ -8,6 +8,7 @@ import Altersky from 'components/MainContent/Altersky/Altersky'
 import Home from 'components/MainContent/Home/Home/Home'
 import BunpalProfiles from 'components/MainContent/BunpalProfiles/BunpalProfiles'
 import User from 'components/MainContent/User/User/User'
+import PetStorage from 'components/PetStorage/PetStorage/PetStorage'
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
 					<Route path="altersky"  element={<Altersky/>}/>
 					<Route path="bunpal" element={<BunpalProfiles/>}/>
 					<Route path="user" element={<User/>}/>
+					<Route path="pet" element={<PetStorage/>}/>
                 </Route>
             </Routes>
 		</>
