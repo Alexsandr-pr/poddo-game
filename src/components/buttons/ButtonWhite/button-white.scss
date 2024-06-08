@@ -5,13 +5,14 @@
     padding: 7px 15px;
     color: #E3E3E3;
     font-size: 14px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 8px;
-    white-space: nowrap;
-    border-radius: 6px;
     border: 1px solid #FAFAFA;
-    font-weight: 600;
+    
     line-height: 1.7; /* 23.8px */
+    @media(hover:hover) {
+        &:hover {
+            cursor: pointer;
+            background:   #5921CB;
+        }
+    }
 }

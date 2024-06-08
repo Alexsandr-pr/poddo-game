@@ -109,10 +109,10 @@
     top: 0px;
     left: 0;
     height: 18px;
-    width: 70%;
+    width: 0;
+    transition: width 1.5s ease;
     border-radius: 20px;
     background: linear-gradient(90deg, #773FCF 0%, #5B23CB 100%);
-    
     padding-right: 17px;
     font-size: 11px;
     line-height: 1.7; /* 18.7px */

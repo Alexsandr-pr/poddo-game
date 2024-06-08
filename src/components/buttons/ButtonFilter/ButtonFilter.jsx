@@ -2,7 +2,7 @@
 import "./button-filter.scss"
 const ButtonFilter = ({text, active}) => {
     return (
-        <button className={`button-filter ${active ? "active" : " "}`}>    
+        <button className={`button-filter button ${active ? "active" : " "}`}>    
             {text}
         </button>
     )

@@ -18,13 +18,9 @@ const Layout = () => {
     const {mobileMenu} = useSelector(store => store.menu);
 
     const [block] = useAutoAnimate();
-    const [block2] = useAutoAnimate();
     return (
-        <div
-            ref={block2}
-            className='body'>
+        <div className='body'>
             <div
-                
                 className={`body__left ${mobileMenu ? "active" : ""}`}>
                     <LeftMenu />
             </div>

@@ -79,7 +79,7 @@ const GameLeaderBord = () => {
         <ParentBg>
             <div className="game-leaderbord">
                 <BlockTop title={"GAME  leaderboard"}>
-                    <button className="text">See All</button>
+                    <button className="text text-button">See All</button>
                 </BlockTop>
                 <div className="game-leaderbord__list">
                     {

@@ -36,7 +36,7 @@ const LootLeaderBord = () => {
         <ParentBg>
             <div className="loot-leaderbord">
                 <BlockTop title={"Loot leaderboard"}>
-                    <button className="text">See All</button>
+                    <button className="text text-button">See All</button>
                 </BlockTop>
                 <div className="loot-leaderbord__list">
                     {

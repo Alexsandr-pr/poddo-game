@@ -1,8 +1,16 @@
 .button-violet-bg {
     font-size: 11px;
-    font-weight: 600;
     line-height: 1.7; /* 18.7px */
     padding: 6px 10px;
-    border-radius: 6px;
+    transition: all 0.3s ease 0s;
     background: #8C67F6;
+    border:1px solid transparent;
+    @media(hover:hover) {
+        &:hover {
+            cursor: pointer;
+            color: #8C67F6;
+            border: 1px solid #8C67F6;
+            background: none;
+        }
+    }
 }

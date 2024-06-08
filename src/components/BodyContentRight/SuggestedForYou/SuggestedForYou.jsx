@@ -32,7 +32,7 @@ const SuggestedForYou = () => {
         <ParentBg>
             <div className="suggested-for">
                 <BlockTop title={"SUGGESTED FOR YOU"}>
-                    <button className="text">See All</button>
+                    <button className="text text-button">See All</button>
                 </BlockTop>
                 <div className="suggested-for__list">
                     {

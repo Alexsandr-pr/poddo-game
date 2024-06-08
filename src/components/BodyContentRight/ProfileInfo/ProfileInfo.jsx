@@ -26,7 +26,7 @@ const ProfileInfo = () => {
                 
                 <div className="profile-bottom">
                     <div className="profile-bottom__left">
-                        <Balance/>
+                        <Balance number={12544}/>
                     </div>
                     <div className="profile-bottom__right profile-bottom-right">
                         <div className="profile-bottom-right__buttons">

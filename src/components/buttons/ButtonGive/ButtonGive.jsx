@@ -5,7 +5,7 @@ import "./button-give.scss";
 
 const ButtonGive = () => {
     return (
-        <button className="button-give">
+        <button className="button-give button">
             <img width={21} height={21} src={balance} alt="" />
             <span>Give tips</span>
         </button>

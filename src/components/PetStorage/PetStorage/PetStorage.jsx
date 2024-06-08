@@ -12,6 +12,7 @@ import PetItem from "../PetItem/PetItem"
 
 import "./pet-storage.scss";
 
+
 const data = [
     {
         image: image1,

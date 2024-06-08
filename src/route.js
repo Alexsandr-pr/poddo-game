@@ -5,6 +5,7 @@ import MainLeaderbord from "components/MainContent/MainLeaderbord/MainLeaderbord
 import User from "components/MainContent/User/User/User";
 import PetStorage from "components/PetStorage/PetStorage/PetStorage";
 import Admin from "pages/Admin/Admin";
+import Settings from "pages/Settings/Settings";
 import { 
     ACTIVITY_ROUTE, 
     ADMIN_ROUTE, 
@@ -62,7 +63,7 @@ export const publicRoutes = [
     },
     {
         path: SETTINGS_ROUTE,
-        Component:Home
+        Component:Settings
     },
     {
         path: LOGOUT_ROUTE,

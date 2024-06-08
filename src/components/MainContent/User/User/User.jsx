@@ -62,7 +62,7 @@ const User = () => {
             <div className="user__stats user-stats">
                 <p className='user-stats__level'>Level 2</p>
                 <div className="user-stats__body">
-                    <Range/>
+                    <Range widthPercentage={80}/>
                 </div>
                 <div className="user-stats__btn">
                     <ButtonWhite>

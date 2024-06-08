@@ -2,12 +2,16 @@
 
 import balance from "./img/balance.webp";
 import "./balance.scss";
+import useNumberAnimation from "hooks/useNumberAnimation";
 
-const Balance = () => {
+const Balance = ({number}) => {
+    const targetCount = parseInt(number); // Получить число из текста
+    const count = useNumberAnimation(targetCount, 20000); 
+
     return (
         <div className="balance">
             <img src={balance} className="balance__image"/>
-            <p className="balance__text">12,256</p>
+            <p className="balance__text">{count}</p>
         </div>
     )
 }

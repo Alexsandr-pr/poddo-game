@@ -53,3 +53,27 @@
     color: rgba(255, 255, 255, 0.60);
     font-size: 7px;
 }
+
+.pet-item__buttons {
+    display: none;
+    transition: all 0.3s ease 0s;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.pet-item {
+    transition: all 0.3s ease 0s;
+    @media(hover:hover) {
+        &:hover {
+            scale: 1.05;
+            position: relative;
+            z-index: 40;
+            .pet-item__buttons {
+                display: grid;
+            }
+            .pet-item__block-exp {
+                display: none;
+            }
+            cursor: pointer;
+        }
+    }
+}
