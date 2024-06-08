@@ -10,6 +10,7 @@ import useMediaQuery from 'hooks/useMediaQuery'
 import ButtonMobile from 'components/LeftMenu/ButtonMobile/ButtonMobile'
 import { useSelector } from 'react-redux'
 import { useAutoAnimate } from '@formkit/auto-animate/react'
+import BlockFon from 'components/BlockFon/BlockFon'
 
 const Layout = () => {
 
@@ -19,7 +20,9 @@ const Layout = () => {
 
     const [block] = useAutoAnimate();
     return (
+
         <div className='body'>
+            <BlockFon/>
             <div
                 className={`body__left ${mobileMenu ? "active" : ""}`}>
                     <LeftMenu />

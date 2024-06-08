@@ -90,7 +90,7 @@ button {
     @media(hover:hover) {
         &:hover {
             cursor: pointer;
-            transform: translateY(1px);
+            transform: translateY(0.95px);
         }
     }
 }

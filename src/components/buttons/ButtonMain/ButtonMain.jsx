@@ -19,7 +19,7 @@ const ButtonMain = ({text}) => {
             <div className="blob active" style={{ top: '50%', left: '-25%' }}></div>
         </div>
         <div className="text">{text}</div>
-        <svg style={{ position: 'fixed', top: '0vh' }}>
+        <svg style={{ position: 'absolute', top: '0' }}>
             <defs>
                 <filter id="blob">
                     <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
