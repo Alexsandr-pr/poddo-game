@@ -5,63 +5,34 @@ import { Outlet, useLocation } from 'react-router-dom'
 
 import "./layout.scss"
 import BodyContentRight from 'components/BodyContentRight/BodyContentRight/BodyContentRight'
-import MenuMobile from 'components/MenuMobile/MenuMobile'
 
+import useMediaQuery from 'hooks/useMediaQuery'
+import ButtonMobile from 'components/LeftMenu/ButtonMobile/ButtonMobile'
+import { useSelector } from 'react-redux'
+import { useAutoAnimate } from '@formkit/auto-animate/react'
 
 const Layout = () => {
 
-    const location = useLocation()
-    const [menuOpen, setMenuOpen] = useState(false);
     const [menuRight, setMenuRight] = useState(false);
-    /*
-    const touchStartX = useRef(0);
-    const touchEndX = useRef(0);
-    
-    const handleTouchStart = (e) => {
-        touchStartX.current = e.targetTouches[0].clientX;
-    };
+    const query = useMediaQuery('(max-width:767.98px)');
+    const {mobileMenu} = useSelector(store => store.menu);
 
-    const handleTouchMove = (e) => {
-        touchEndX.current = e.targetTouches[0].clientX;
-    };
-
-    const handleTouchEnd = () => {
-
-        if (touchStartX.current - touchEndX.current > 100) {
-            if(menuOpen) {
-                setMenuOpen(false);
-            } else {
-                setMenuRight(true);
-            }
-            
-        }
-        if (touchEndX.current - touchStartX.current > 100) {
-            if(menuRight) {
-                setMenuRight(false);
-            } else {
-                setMenuOpen(true);
-            }
-        }
-        
-    };
-    */
-
-    useEffect(() => {
-        setMenuOpen(false);
-    }, [location])
-
+    const [block] = useAutoAnimate();
+    const [block2] = useAutoAnimate();
     return (
         <div
+            ref={block2}
             className='body'>
             <div
-                className={`body__left ${menuOpen ? "active" : ""}`}>
+                
+                className={`body__left ${mobileMenu ? "active" : ""}`}>
                     <LeftMenu />
             </div>
             <div className="body__right">
                 <Header/>
                 <div
                     className="body__content body-content">
-                    <main className="body-content__main">
+                    <main ref={block} className="body-content__main">
                         <Outlet/>
                     </main>
                     <aside className={`body-content__right ${menuRight ? "active" : ""}`}>
@@ -69,7 +40,7 @@ const Layout = () => {
                     </aside>
                 </div>
             </div>
-            <MenuMobile/>
+            {query && <ButtonMobile/>}
         </div>
     )
 }

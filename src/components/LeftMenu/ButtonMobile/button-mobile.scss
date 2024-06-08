@@ -1,0 +1,26 @@
+.button-mobile {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    border-radius:0px 12px 0px 0px;
+    color:#fff;
+    z-index: 2;
+    padding: 6px 8px;
+    font-size: 14px;
+    box-shadow: 1px -1px 6px  #7940CF;
+    background: linear-gradient(180deg, #7940CF 0%, #5921CB 100%);
+}
+
+.button-close {
+    position: absolute;
+    left: 0;
+    z-index: 450;
+    bottom: 0;
+    width: clamp(10vw, 100px, 100vw);
+    text-align: center;
+    color:#fff;
+    padding: 6px 8px;
+    font-size: 14px;
+    box-shadow: 0px -1px 6px  #7940CF;
+    background: linear-gradient(180deg, #7940CF 0%, #5921CB 100%);
+}

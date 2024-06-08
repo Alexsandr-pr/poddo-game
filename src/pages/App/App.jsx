@@ -9,13 +9,21 @@ import Home from 'components/MainContent/Home/Home/Home'
 import BunpalProfiles from 'components/MainContent/BunpalProfiles/BunpalProfiles'
 import User from 'components/MainContent/User/User/User'
 import PetStorage from 'components/PetStorage/PetStorage/PetStorage'
+import PageNotFound from 'pages/PageNotFound/PageNotFound'
+import AppRouter from 'components/AppRouter/AppRouter'
 
 
 function App() {
 	
 	return (
 		<>
-			<Routes>
+			
+			<AppRouter/>
+		</>
+	)
+}
+/*
+<Routes>
                 <Route  path="/" element={ <Layout />}>
 					<Route index  element={<Home/>}/>
                     <Route path="chart"  element={<MainLeaderbord/>}/>
@@ -23,10 +31,8 @@ function App() {
 					<Route path="bunpal" element={<BunpalProfiles/>}/>
 					<Route path="user" element={<User/>}/>
 					<Route path="pet" element={<PetStorage/>}/>
+					<Route path="*" element={<PageNotFound/>}/>
                 </Route>
             </Routes>
-		</>
-	)
-}
-
+			*/
 export default App
