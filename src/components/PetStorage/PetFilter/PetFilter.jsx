@@ -3,7 +3,8 @@ import ButtonMain from 'components/buttons/ButtonMain/ButtonMain'
 
 import "./pet-filter.scss";
 
-const PetFilter = () => {
+
+const PetFilter = ({cb}) => {
     return (
         <div className='pet-filter'>
             <div className="pet-filter__title">FILTER BY</div>
@@ -14,7 +15,7 @@ const PetFilter = () => {
                 <Select/>
             </div>
             <div className="pet-filter__buttons">
-                <ButtonMain text={"Proceed"}/>
+                <ButtonMain cb={cb} text={"Proceed"}/>
             </div>
         </div>
     )

@@ -2,9 +2,9 @@
 import "./button-white.scss";
 
 
-const ButtonWhite = ({children}) => {
+const ButtonWhite = ({children, cb}) => {
     return (
-        <button className="button-white button">
+        <button onClick={() => cb()} className="button-white button">
             {children}
         </button>
     )
