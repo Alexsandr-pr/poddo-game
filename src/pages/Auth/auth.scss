@@ -1,0 +1,29 @@
+.auth {
+    display: flex;
+    width: 100%;
+}
+
+.auth__left {
+    flex: 0 1 50%;
+    background: #272932;
+    @media(max-width:1280.98px){
+        flex: 0 1 60%;
+    }
+    @media(max-width:991.98px){
+        flex: 0 1 100%;
+    }
+}
+.auth__image {
+    flex: 0 1 50%;
+    @media(max-width:1280.98px){
+        flex: 0 1 40%;
+    }
+    @media(max-width:767.98px){
+        display: none;
+    }
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}

@@ -11,6 +11,7 @@ import ButtonMobile from 'components/LeftMenu/ButtonMobile/ButtonMobile'
 import { useSelector } from 'react-redux'
 import { useAutoAnimate } from '@formkit/auto-animate/react'
 import BlockFon from 'components/BlockFon/BlockFon'
+import Auth from 'pages/Auth/Auth'
 
 const Layout = () => {
 
@@ -19,6 +20,17 @@ const Layout = () => {
     const {mobileMenu} = useSelector(store => store.menu);
 
     const [block] = useAutoAnimate();
+
+    const isAuth = false;
+
+    if(!isAuth) {
+        return (
+            <div className="body">
+                <Auth/>
+            </div>
+        )
+    }
+
     return (
 
         <div className='body'>

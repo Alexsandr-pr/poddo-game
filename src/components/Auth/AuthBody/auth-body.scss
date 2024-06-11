@@ -1,0 +1,78 @@
+.auth-body {
+    padding: 50px 75px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    @media(max-width:991.98px){
+        padding: 50px;
+    }
+    position: relative;
+    @media(max-width:487.98px){
+        padding: 50px 20px;
+    }
+}
+.auth-body__img {
+    position: absolute;
+    opacity: 0.3;
+    width: 100%;
+    left: 0;
+    top: 0px;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+.logo {
+    
+    font-family: "Bakbak One";
+    font-size: 38px;
+    line-height: normal;
+    text-transform: uppercase;
+
+}
+.auth-body__top {
+    position: relative;
+    z-index: 2;
+    flex: 0 1 100%;
+}
+.body-form {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.auth-body__logo {
+    padding-bottom: 70px;
+}
+.auth-body__content {
+    display: flex;
+    flex-direction: column;
+    gap: 66px;
+}
+
+.text-violet {
+    color: #8C67F6;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 215.385% */
+}
+
+
+.button-text-grey {
+
+    padding: 13px 20px;
+    color: rgba(236, 236, 236, 0.60);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 200% */
+}
+
+
+.auth-body__buttons {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
