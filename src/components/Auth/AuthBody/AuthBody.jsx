@@ -38,7 +38,6 @@ const AuthBody = () => {
                 </div>
             </div>
 
-
             <div className="auth-body__buttons">
                 <ButtonMainBig text={"Login"}/>
                 <button className="button-text-grey">Contact Us</button>

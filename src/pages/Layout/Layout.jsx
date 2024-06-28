@@ -21,7 +21,7 @@ const Layout = () => {
 
     const [block] = useAutoAnimate();
 
-    const isAuth = false;
+    const isAuth = true;   
 
     if(!isAuth) {
         return (
@@ -32,7 +32,6 @@ const Layout = () => {
     }
 
     return (
-
         <div className='body'>
             <BlockFon/>
             <div

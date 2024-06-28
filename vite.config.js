@@ -13,5 +13,5 @@ export default defineConfig({
       store: "/src/store",
       utils: "/src/utils"
     }
-}
+  }
 })
